@@ -11,7 +11,7 @@ btn.addEventListener("click", () => {
     img.src = "https://placedog.net/200/200";
     btn.textContent = "Show Cat";
   } else {
-    img.src = "https://placekitten.com/200/200";
+    img.src = "img/cat img.jpg";
     btn.textContent = "Show Dog";
   }
   showingCat = !showingCat;
