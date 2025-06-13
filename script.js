@@ -1,0 +1,18 @@
+//  homework 3 Image Switcher (Animal Toggle)
+// Question: Create a button that switches an image between a cat and a dog.
+
+const img = document.getElementById("animal");
+const btn = document.getElementById("animalBtn");
+
+let showingCat = true;
+
+btn.addEventListener("click", () => {
+  if (showingCat) {
+    img.src = "https://placedog.net/200/200";
+    btn.textContent = "Show Cat";
+  } else {
+    img.src = "https://placekitten.com/200/200";
+    btn.textContent = "Show Dog";
+  }
+  showingCat = !showingCat;
+});
